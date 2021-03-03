@@ -88,74 +88,181 @@
     <Task-category name="&lt;default&gt;"/>
 </Task-table>
 <Task/><Presentation-Block>
-<Group view="presentation" inline-output="false" labelreference="L27" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">K\303\270r altid dette script fra start til slut</Font></Text-field>
+<Group view="code" labelreference="L90" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">OBS: K\303\270r *ikke* hele denne fil, men kun den sektion, der \303\270nskes</Font></Text-field>
+</Input>
+</Group></Presentation-Block>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font encoding="UTF-8">Opret oprindelig HelpDatabase (k\303\270r kun 1 gang)</Font></Text-field></Title><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L91" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">En .help-fil oprettes, som der senere kan l\303\246gges filer i</Font></Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
-<Group view="presentation" hide-input="false" hide-output="false" inline-output="true" labelreference="L59" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Group view="code" labelreference="L94" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">restart:with(HelpTools):with(Database):with(FileTools):</Text-field>
 </Input>
 </Group>
-<Group view="code" labelreference="L61" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">restart:with(FileTools):</Text-field>
+<Group view="code" labelreference="L96" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">Lav sti</Text-field>
 </Input>
 </Group>
-<Group view="code" labelreference="L71" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">Find relevante stier</Text-field>
+<Group view="code" labelreference="L97" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">helpFile:=JoinPath([ParentDirectory(currentdir()), &quot;MichaelPakken.help&quot;]):</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L98" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Create(helpFile):</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
-<Group view="code" hide-input="false" labelreference="L34" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">mainDir:=ParentDirectory(currentdir()):</Text-field>
+<Group view="presentation" inline-output="false" labelreference="L92" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">Hvis filen allerede findes giver det blot en error</Text-field>
 </Input>
-</Group>
-<Group view="code" hide-input="false" labelreference="L55" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">packageDir := JoinPath([mainDir, &quot;MichaelPakken.mla&quot;]):</Text-field>
-</Input>
-</Group>
-<Group view="code" labelreference="L72" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal">Flyt den gamle MichaelPakke til Legacy med et unikt navn</Text-field>
-</Input>
-</Group>
-<Group view="code" labelreference="L66" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">DateStr:=cat(DayOfMonth(Date()),&quot;-&quot;,Month(Date()),&quot;-&quot;,Year(Date())):</Text-field>
-</Input>
-</Group>
-<Group view="code" hide-input="false" labelreference="L68" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">LegacyDir:=JoinPath([mainDir,&quot;Legacy&quot;,cat(&quot;MichaelPakken-&quot;, DateStr)]):</Text-field>
-</Input>
-</Group>
-<Group view="code" hide-input="false" labelreference="L67" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">i:=1:
-while Exists(cat(LegacyDir,&quot;.&quot;,i,&quot;.mla&quot;)) do i:=i+1: od:
-LegacyDir:=cat(LegacyDir,&quot;.&quot;,i,&quot;.mla&quot;):</Text-field>
-</Input>
-</Group>
-<Group view="code" labelreference="L74" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">FileTools[Copy](packageDir,LegacyDir):</Text-field>
-</Input>
-</Group>
-<Group view="code" labelreference="L80" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">FileTools[Remove](packageDir):</Text-field>
-</Input>
-</Group>
-<Group view="code" labelreference="L69" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">Indl\303\246s .mpl-fil (koden for MichaelPakken) og gem en ny MichaelPakke</Font></Text-field>
-</Input>
-</Group>
-<Group view="code" hide-input="false" labelreference="L56" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">read(&quot;MichaelPakken.mpl&quot;):</Text-field>
-</Input>
-</Group>
-<Group view="code" labelreference="L62" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">LibraryTools[Create](packageDir)</Text-field>
-</Input>
-</Group>
-<Group view="code" labelreference="L63" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">savelib('Michael',packageDir)<Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+</Group></Presentation-Block>
+</Section><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L114" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+</Group></Presentation-Block>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font encoding="UTF-8">Opdater HelpDatabase med nye filer (k\303\270r n\303\245r nye .help-filer er lavet)</Font></Text-field></Title><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L102" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">Tilf\303\270jer alle filer i 'Help Database'-mappen, som ikke allerede ligger i Databasefilen, til Databasefilen.</Font></Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
-<Group view="presentation" inline-output="false" labelreference="L22" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group view="presentation" inline-output="false" labelreference="L103" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">Vil dog ikke opdage hvis der er lavet \303\246ndringer i filer, som allerede er i databasefilen</Font></Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L106" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">restart:with(HelpTools):with(Database):with(FileTools):</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-input="false" labelreference="L109" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">helpFile:=JoinPath([ParentDirectory(currentdir()), &quot;MichaelPakken.help&quot;]):</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L107" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">DatabaseDir:=JoinPath([currentdir(), &quot;Help Database&quot;]):</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-input="false" labelreference="L108" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">CurrentTopics:=GetTopics(helpFile):
+if CurrentTopics = NULL then CurrentTopics := [] fi:</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L110" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">allfiles:=ListDirectory(DatabaseDir):</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L111" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">for file in allfiles do
+topic:=Basename(file):
+if not (topic in CurrentTopics) then
+fullpath:=JoinPath([DatabaseDir,file]):
+makehelp(topic,fullpath,helpFile,showhelp=false):
+fi:
+od:<Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L154" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group></Presentation-Block>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font encoding="UTF-8">Opdater eksisterende filer i HelpDatabase (k\303\270r n\303\245r gamle .help-filer er \303\246ndret)</Font></Text-field></Title><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L119" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field style="Text" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L145" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">restart:with(HelpTools):with(Database):with(FileTools):</Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="code" labelreference="L149" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">helpFile:=JoinPath([ParentDirectory(currentdir()), &quot;MichaelPakken.help&quot;]):</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L150" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">DatabaseDir:=JoinPath([currentdir(), &quot;Help Database&quot;]):</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L147" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" bold="true" foreground="[255,0,0]" size="16" layout="Normal"></Text-field><Text-field style="Text" bold="true" foreground="[255,0,0]" size="16" layout="Normal"><Font size="16" bold="true" foreground="[255,0,0]" encoding="UTF-8">Fort\303\246l her hvilke filer, der skal opdateres.</Font></Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L146" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">FilesToUpdate:=[&quot;01a_KomplekseTal.mw&quot;, &quot;02_Taylor.mw&quot;]:</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L153" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L151" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">Programmet tjekker selv at filerne faktisk findes</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L152" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">for file in FilesToUpdate do
+if not (Exists(JoinPath([DatabaseDir, file]))) then
+print(cat(&quot;File &quot;, file, &quot; does not exist.&quot;));
+else
+topic:=Basename(file):
+fullpath:=JoinPath([DatabaseDir,file]):
+RemoveFromDatabase(topic,helpFile):
+makehelp(topic,fullpath,helpFile,showhelp=false):
+fi:
+od:</Text-field>
+</Input>
+</Group></Presentation-Block>
+</Section><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L117" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+</Group></Presentation-Block>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font encoding="UTF-8">Genskab HelpDatabase (k\303\270r kun hvis der skal startes helt forfra)</Font></Text-field></Title><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L121" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">Sletter den nuv\303\246rende databasefil, opretter en ny, og tilf\303\270jer hele HelpDatabase-mappen til den</Font></Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L124" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"></Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L126" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">Koden skrives i tekst, s\303\245 den ikke k\303\270res ved et uheld. Marker blokkene og tryk i topmenuen &quot;Format -&gt; Convert To -&gt; 1D math input&quot; for at k\303\270re. Konverter tilbage til tekst bagefter</Font></Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L132" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"></Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L136" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">restart:with(HelpTools):with(Database):with(FileTools):</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L138" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">helpFile:=JoinPath([ParentDirectory(currentdir()), &quot;MichaelPakken.help&quot;]):
+DatabaseDir:=JoinPath([currentdir(), &quot;Help Database&quot;]):</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L139" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">FileTools[Remove](helpFile)</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L144" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">Create(helpFile):</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L140" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">allfiles:=ListDirectory(DatabaseDir):</Text-field>
+</Input>
+</Group>
+<Group view="code" labelreference="L141" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal">for file in allfiles do
+topic:=Basename(file):
+fullpath:=JoinPath([DatabaseDir,file]):
+makehelp(topic,fullpath,helpFile,showhelp=false):
+od:</Text-field>
+</Input>
+</Group></Presentation-Block>
+</Section><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L118" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group></Presentation-Block>
 </Worksheet>

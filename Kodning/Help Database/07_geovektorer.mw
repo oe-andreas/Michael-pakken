@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Worksheet>
+<Version major="2020" minor="1"/>
+<Label-Scheme value="2" prefix=""/>
+<View-Properties presentation="false" autoexpanding_sections="true" UserProfileName="Maple Default Profile" NumericFormat-ApplyInteger="true" NumericFormat-ApplyRational="true" NumericFormat-ApplyExponent="false" editable="true">
+</View-Properties>
+<MapleNet-Properties prettyprint="3" warnlevel="3" compactdisplay="false" preplot="" helpbrowser="standard" displayprecision="-1" echo="1" unitattributes="&quot;fontweight&quot; = &quot;bold&quot;" imaginaryunit="I" longdelim="true" elisiontermsthreshold="10000" elisiondigitsafter="100" elisiondigitsbefore="100" plotdevice="inline" errorbreak="1" plotoptions="" plotdriver="opengl" quiet="false" elisiontermsbefore="100" elisiontermsafter="100" historytimestamp="false" screenwidth="79" indentamount="4" plotoutput="terminal" screenpixelheight="1080" rtablesize="[10, 10]" useclientjvm="true" labelwidth="20" postplot="" typesetting="extended" ansi="false" ansicolor="[]" elisiondigitsthreshold="10000" showassumed="1" ansilprint="false" trailingsemicolon="true" errorcursor="false" labelling="true" screenheight="25" prompt="&gt; " verboseproc="1" latexwidth="8.0" ShowLabels="true"/>
+<Styles>
+<Font name="Heading 1" background="[0,0,0]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Heading 4" background="[255,255,255]" bold="false" executable="false" family="Serif" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Heading 2" background="[255,255,255]" bold="true" executable="false" family="Serif" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="16" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Heading 3" background="[255,255,255]" bold="true" executable="false" family="Serif" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="14" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 1" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Text Output" background="[255,255,255]" bold="false" executable="false" family="Monospaced" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Math_6" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 2" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Math_5" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 3" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 4" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 5" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Atomic Variable" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[175,0,175]" italic="true" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="HyperlinkWarning" background="[255,255,255]" bold="false" executable="false" family="Monospaced" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Dictionary Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Serif" foreground="[147,0,15]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="List Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="_cstyle258" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="_cstyle259" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Dash Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Input" background="[255,255,255]" bold="false" executable="true" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="_cstyle256" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Code" background="[255,255,255]" bold="false" executable="false" family="Monospaced" foreground="[255,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="_pstyle258" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="_cstyle260" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Author" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Warning" background="[255,255,255]" bold="false" executable="false" family="Monospaced" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Output" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Line Printed Output" background="[255,255,255]" bold="false" executable="false" family="Monospaced" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="_cstyle269" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Maple Output" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Inert Output" background="[255,255,255]" bold="false" executable="true" family="Times New Roman" foreground="[144,144,144]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Diagnostic" background="[255,255,255]" bold="false" executable="false" family="Monospaced" foreground="[40,120,40]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Maple Input" background="[0,0,0]" bold="true" executable="true" family="Monospaced" foreground="[255,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Page Number" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="_cstyle268" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="_cstyle261" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="_cstyle262" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Annotation Title" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="_cstyle263" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Header and Footer" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="10" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="_cstyle264" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="_cstyle270" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="_cstyle271" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="HyperlinkError" background="[255,255,255]" bold="false" executable="false" family="Monospaced" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="2D Math" background="[0,0,0]" bold="false" executable="true" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Bullet Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Maple Plot" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Annotation Text" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Error" background="[255,255,255]" bold="false" executable="false" family="Monospaced" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Title" background="[0,0,0]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Text" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Normal" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Caption Reference" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Maple Input Placeholder" background="[255,255,255]" bold="true" executable="true" family="Monospaced" foreground="[200,0,200]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Equation Label" background="[255,255,255]" bold="true" executable="false" family="Monospaced" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Comment" background="[0,0,0]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Serif" foreground="[0,128,128]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Caption Text" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Layout name="Heading 1" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="4" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Warning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 4" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Line Printed Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 2" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="2" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Maple Output" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.3" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 3" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Diagnostic" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Ordered List 1" alignment="left" bullet="numeric" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Text Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="newline" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Ordered List 2" alignment="left" bullet="alphabetic" firstindent="0" leftmargin="36" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Ordered List 3" alignment="left" bullet="roman" firstindent="0" leftmargin="72" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Ordered List 4" alignment="left" bullet="ALPHABETIC" firstindent="0" leftmargin="108" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Ordered List 5" alignment="left" bullet="ROMAN" firstindent="0" leftmargin="144" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Annotation Title" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="12" spacebelow="12" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="HyperlinkError" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="HyperlinkWarning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Bullet Item" alignment="left" bullet="dot" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Maple Plot" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="List Item" alignment="left" bullet="indent" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Dash Item" alignment="left" bullet="dash" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Error" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Title" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="12" spacebelow="12" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Normal" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="_pstyle258" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Author" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="8" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Pencil-style name="Pencil 1" pen-color="[0,0,0]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 2" pen-color="[0,0,255]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 3" pen-color="[0,0,0]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 4" pen-color="[0,0,255]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 5" pen-color="[255,0,0]" pen-height="5.0" pen-width="5.0" pen-opacity="1.0"/>
+<Highlighter-style name="Highlighter 5" pen-color="[255,255,0]" pen-height="48.0" pen-width="48.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 3" pen-color="[51,255,0]" pen-height="24.0" pen-width="24.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 4" pen-color="[0,255,255]" pen-height="32.0" pen-width="32.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 1" pen-color="[255,153,255]" pen-height="12.0" pen-width="8.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 2" pen-color="[255,204,0]" pen-height="14.0" pen-width="14.0" pen-opacity="0.8"/>
+</Styles>
+<Startup-Code startupcode=""/>
+<Footer left-content="" center-content="&amp;[Page]" right-content="" left-image-scale-width="100" center-image-scale-width="100" right-image-scale-width="100" left-image-scale-height="100" center-image-scale-height="100" right-image-scale-height="100" date-format="2" selected-index="0" first-number="1" first-numbered-page="1"/>
+<Task-table>
+    <Task-category name="&lt;default&gt;"/>
+</Task-table>
+<Task/>
+<Group labelreference="L3" drawlabel="true">
+<Input><Text-field style="Title" layout="Title">Geometriske vektorer (basic)<Font size="12" underline="false" bold="false">
+</Font><Font style="Author">rev. 03.10.19</Font><Hyperlink linktarget="http://www2.mat.dtu.dk/education/01005/EMAIL.html" hyperlink="true"></Hyperlink></Text-field>
+</Input>
+</Group>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Initialisering:</Text-field></Title>
+<Group labelreference="L105" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">restart:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L106" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">with(LinearAlgebra):</Text-field>
+</Input>
+</Group>
+<Group labelreference="L178" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font encoding="UTF-8">Unders\303\270ge om en vektor er en </Font><Font italic="true">linearkombination</Font> af andre vektorer</Text-field></Title>
+<Group labelreference="L39" drawlabel="true">
+<Input><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">I m\303\246ngden </Font><Equation executable="false" style="Normal" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYkLUkjbW9HRiQ2LlExJkludmlzaWJsZVRpbWVzO0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvJSxtYXRodmFyaWFudEdRJ25vcm1hbEYnLyUmZmVuY2VHRjEvJSpzZXBhcmF0b3JHRjEvJSlzdHJldGNoeUdGMS8lKnN5bW1ldHJpY0dGMS8lKGxhcmdlb3BHRjEvJS5tb3ZhYmxlbGltaXRzR0YxLyUnYWNjZW50R0YxLyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdGRUYy">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYkLUkjbW9HRiQ2LlExJkludmlzaWJsZVRpbWVzO0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvJSxtYXRodmFyaWFudEdRJ25vcm1hbEYnLyUmZmVuY2VHRjEvJSpzZXBhcmF0b3JHRjEvJSlzdHJldGNoeUdGMS8lKnN5bW1ldHJpY0dGMS8lKGxhcmdlb3BHRjEvJS5tb3ZhYmxlbGltaXRzR0YxLyUnYWNjZW50R0YxLyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdGRUYy</Equation><Font encoding="UTF-8">af  geometriske rumvektorer (afsat ud fra Origo) er der givet 3 vektorer ved f\303\270lgende koordinats\303\246t mht. standard e-basis:</Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L116" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">a1:=&lt;1,1,1&gt;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L117" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">a2:=&lt;1,0,1&gt;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L113" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">b:=&lt;2,-2,0&gt;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L112" drawlabel="true">
+<Input><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">Vi vil unders\303\270ge, om vektoren  </Font><Font style="_cstyle256" bold="true" italic="false">b</Font>  kan skrives som en linearkombination af vektorerne  <Font opaque="false" subscript="false" underline="false" superscript="false" bold="true" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[0,0,0]" style="_cstyle257" placeholder="false" family="Times New Roman" font_style_name="_cstyle257">a</Font><Font opaque="false" subscript="false" underline="false" superscript="false" bold="false" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[0,0,0]" style="_cstyle267" placeholder="false" family="Times New Roman" font_style_name="_cstyle267">1 og </Font><Font opaque="false" subscript="false" underline="false" superscript="false" bold="true" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[0,0,0]" style="_cstyle267" placeholder="false" family="Times New Roman" font_style_name="_cstyle267">a</Font><Font opaque="false" subscript="false" underline="false" superscript="false" bold="false" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[0,0,0]" style="_cstyle267" placeholder="false" family="Times New Roman" font_style_name="_cstyle267">2</Font> .</Text-field><Text-field style="Normal" layout="Normal"></Text-field><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">Vi skal derfor unders\303\270ge, om der findes  </Font><Equation executable="false" style="2D Comment" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUklbXN1YkdGJDYlLUkjbWlHRiQ2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYkLUkjbW5HRiQ2JFEiMUYnL0Y2USdub3JtYWxGJ0Y+LyUvc3Vic2NyaXB0c2hpZnRHUSIwRictSSNtb0dGJDYtUSIsRidGPi8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNC8lKXN0cmV0Y2h5R0ZJLyUqc3ltbWV0cmljR0ZJLyUobGFyZ2VvcEdGSS8lLm1vdmFibGVsaW1pdHNHRkkvJSdhY2NlbnRHRkkvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GLDYlRi4tRiM2JC1GOzYkUSIyRidGPkY+RkAtRi82I1EhRidGPg==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUklbXN1YkdGJDYlLUkjbWlHRiQ2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYkLUkjbW5HRiQ2JFEiMUYnL0Y2USdub3JtYWxGJ0Y+LyUvc3Vic2NyaXB0c2hpZnRHUSIwRictSSNtb0dGJDYtUSIsRidGPi8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNC8lKXN0cmV0Y2h5R0ZJLyUqc3ltbWV0cmljR0ZJLyUobGFyZ2VvcEdGSS8lLm1vdmFibGVsaW1pdHNHRkkvJSdhY2NlbnRHRkkvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GLDYlRi4tRiM2JC1GOzYkUSIyRidGPkY+RkAtRi82I1EhRidGPg==</Equation><Font encoding="UTF-8">\342\210\210 \342\204\235  s\303\245ledes, at </Font></Text-field><Text-field style="_pstyle256" opaque="false" subscript="false" underline="false" superscript="false" bold="false" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[255,255,255]" placeholder="false" family="Times New Roman" font_style_name="_pstyle256" layout="_pstyle256" linespacing="0.0" initial="0" firstindent="0" leftmargin="0" layout_style_name="_pstyle256" pagebreak-before="false" spaceabove="0" linebreak="space" rightmargin="0" bulletsuffix="" alignment="left" bullet="none" spacebelow="0"><Equation executable="false" style="2D Comment" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2I1EhRictSSVtc3ViR0YkNiUtRiw2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYkLUkjbW5HRiQ2JFEiMUYnL0Y5USdub3JtYWxGJ0ZBLyUvc3Vic2NyaXB0c2hpZnRHUSIwRidGK0ZB">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2I1EhRictSSVtc3ViR0YkNiUtRiw2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYkLUkjbW5HRiQ2JFEiMUYnL0Y5USdub3JtYWxGJ0ZBLyUvc3Vic2NyaXB0c2hpZnRHUSIwRidGK0ZB</Equation> <Font opaque="false" subscript="false" underline="false" superscript="false" bold="true" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[255,255,255]" style="_cstyle276" placeholder="false" family="Times New Roman" font_style_name="_cstyle276">a</Font><Font opaque="false" subscript="false" underline="false" superscript="false" bold="false" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[255,255,255]" style="_cstyle279" placeholder="false" family="Times New Roman" font_style_name="_cstyle279">1</Font> + <Equation executable="false" style="2D Comment" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2I1EhRictSSVtc3ViR0YkNiUtRiw2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYkLUkjbW5HRiQ2JFEiMkYnL0Y5USdub3JtYWxGJ0ZBLyUvc3Vic2NyaXB0c2hpZnRHUSIwRidGK0ZB">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2I1EhRictSSVtc3ViR0YkNiUtRiw2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYkLUkjbW5HRiQ2JFEiMkYnL0Y5USdub3JtYWxGJ0ZBLyUvc3Vic2NyaXB0c2hpZnRHUSIwRidGK0ZB</Equation> <Font opaque="false" subscript="false" underline="false" superscript="false" bold="true" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[255,255,255]" style="_cstyle277" placeholder="false" family="Times New Roman" font_style_name="_cstyle277">a</Font><Font opaque="false" subscript="false" underline="false" superscript="false" bold="false" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[255,255,255]" style="_cstyle280" placeholder="false" family="Times New Roman" font_style_name="_cstyle280">2</Font> = <Font opaque="false" subscript="false" underline="false" superscript="false" bold="false" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[255,255,255]" style="_cstyle282" placeholder="false" family="Times New Roman" font_style_name="_cstyle282">b</Font>         (*)</Text-field><Text-field style="Normal" layout="Normal">Vi udregner (*) :</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L118" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">x1*a1+x2*a2=b</Text-field>
+</Input>
+</Group>
+<Group labelreference="L114" drawlabel="true">
+<Input><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">som er ensbetydende med det line\303\246re ligningssystem hvis totalmatrix er</Font></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L110" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">T:=&lt;a1|a2|b&gt;</Text-field>
+</Input>
+</Group>
+<Group labelreference="L108" drawlabel="true">
+<Input><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">Ligningssystemet l\303\270ses:</Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L122" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">x:=LinearSolve(T)</Text-field>
+</Input>
+</Group>
+<Group labelreference="L121" drawlabel="true">
+<Input><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">&quot;inconsistent system&quot; siger Maple. Vi unders\303\270ger n\303\246rmere :</Font></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L123" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">ReducedRowEchelonForm(T)</Text-field>
+</Input>
+</Group>
+<Group labelreference="L119" drawlabel="true">
+<Input><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">Rangen af totalmatricen (=3) er st\303\270rre end rangen af den tilsvarende koefficientmatrix (=2). </Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L109" drawlabel="true">
+<Input><Text-field style="Normal" layout="Normal">Svaret er derfor at b er ikke en linearkombination af a1 og a2.</Text-field>
+</Input>
+</Group>
+<Group labelreference="L120" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font encoding="UTF-8">Unders\303\270ge om et s\303\246t af geometriske vektorer er <Font italic="true">line\303\246rt uafh\303\246ngige</Font></Font></Text-field></Title>
+<Group labelreference="L136" drawlabel="true">
+<Input><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">Vi vil unders\303\270ge om tre geometriske vektorer i rummet er line\303\246rt uafh\303\246ngige eller line\303\246rt afh\303\246ngige.</Font></Text-field><Text-field style="Normal" layout="Normal">De tre vektorer er givet ved deres koordinater<Font encoding="UTF-8"> mht. standard e-basis s\303\245ledes:</Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L173" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">a1:=&lt;2,2,7&gt;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L175" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">a2:=&lt;3,3,1&gt;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L174" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">a3:=&lt;12,9,2&gt;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L168" drawlabel="true">
+<Input><Text-field style="Normal" layout="Normal"></Text-field><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">Vi skal unders\303\270ge, om der findes  </Font><Equation executable="false" style="2D Comment" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUklbXN1YkdGJDYlLUkjbWlHRiQ2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYkLUkjbW5HRiQ2JFEiMUYnL0Y2USdub3JtYWxGJ0Y+LyUvc3Vic2NyaXB0c2hpZnRHUSIwRictSSNtb0dGJDYtUSIsRidGPi8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNC8lKXN0cmV0Y2h5R0ZJLyUqc3ltbWV0cmljR0ZJLyUobGFyZ2VvcEdGSS8lLm1vdmFibGVsaW1pdHNHRkkvJSdhY2NlbnRHRkkvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GLDYlRi4tRiM2JC1GOzYkUSIyRidGPkY+RkBGQy1GRDYtUSJ+RidGPkZHL0ZLRklGTEZORlBGUkZURlYvRlpGWC1GLDYlRi4tRiM2JS1GOzYkUSIzRidGPkYyRjVGQEZdb0Y+">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUklbXN1YkdGJDYlLUkjbWlHRiQ2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYkLUkjbW5HRiQ2JFEiMUYnL0Y2USdub3JtYWxGJ0Y+LyUvc3Vic2NyaXB0c2hpZnRHUSIwRictSSNtb0dGJDYtUSIsRidGPi8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNC8lKXN0cmV0Y2h5R0ZJLyUqc3ltbWV0cmljR0ZJLyUobGFyZ2VvcEdGSS8lLm1vdmFibGVsaW1pdHNHRkkvJSdhY2NlbnRHRkkvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GLDYlRi4tRiM2JC1GOzYkUSIyRidGPkY+RkBGQy1GRDYtUSJ+RidGPkZHL0ZLRklGTEZORlBGUkZURlYvRlpGWC1GLDYlRi4tRiM2JS1GOzYkUSIzRidGPkYyRjVGQEZdb0Y+</Equation><Font encoding="UTF-8">\342\210\210 \342\204\235  s\303\245ledes at </Font></Text-field><Text-field style="_pstyle256" opaque="false" subscript="false" underline="false" superscript="false" bold="false" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[255,255,255]" placeholder="false" family="Times New Roman" font_style_name="_pstyle256" layout="_pstyle256" linespacing="0.0" initial="0" firstindent="0" leftmargin="0" layout_style_name="_pstyle256" pagebreak-before="false" spaceabove="0" linebreak="space" rightmargin="0" bulletsuffix="" alignment="left" bullet="none" spacebelow="0"><Equation executable="false" style="2D Comment" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2I1EhRictSSVtc3ViR0YkNiUtRiw2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYkLUkjbW5HRiQ2JFEiMUYnL0Y5USdub3JtYWxGJ0ZBLyUvc3Vic2NyaXB0c2hpZnRHUSIwRidGK0ZB">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2I1EhRictSSVtc3ViR0YkNiUtRiw2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYkLUkjbW5HRiQ2JFEiMUYnL0Y5USdub3JtYWxGJ0ZBLyUvc3Vic2NyaXB0c2hpZnRHUSIwRidGK0ZB</Equation> <Font opaque="false" subscript="false" underline="false" superscript="false" bold="true" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[255,255,255]" style="_cstyle276" placeholder="false" family="Times New Roman" font_style_name="_cstyle276">a</Font><Font opaque="false" subscript="false" underline="false" superscript="false" bold="false" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[255,255,255]" style="_cstyle279" placeholder="false" family="Times New Roman" font_style_name="_cstyle279">1</Font> + <Equation executable="false" style="2D Comment" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2I1EhRictSSVtc3ViR0YkNiUtRiw2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYkLUkjbW5HRiQ2JFEiMkYnL0Y5USdub3JtYWxGJ0ZBLyUvc3Vic2NyaXB0c2hpZnRHUSIwRidGK0ZB">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2I1EhRictSSVtc3ViR0YkNiUtRiw2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYkLUkjbW5HRiQ2JFEiMkYnL0Y5USdub3JtYWxGJ0ZBLyUvc3Vic2NyaXB0c2hpZnRHUSIwRidGK0ZB</Equation><Font bold="true"> <Font opaque="false" subscript="false" underline="false" superscript="false" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[255,255,255]" style="_cstyle277" placeholder="false" family="Times New Roman" font_style_name="_cstyle277">a</Font></Font><Font opaque="false" subscript="false" underline="false" superscript="false" bold="false" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[255,255,255]" style="_cstyle280" placeholder="false" family="Times New Roman" font_style_name="_cstyle280">2</Font><Equation executable="false" style="_pstyle256" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzY4LUkjbW9HRiQ2P1EiK0YnLyUnZmFtaWx5R1EwVGltZXN+TmV3flJvbWFuRicvJSVzaXplR1EjMTJGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR0Y3LyUqdW5kZXJsaW5lR0Y3LyUqc3Vic2NyaXB0R0Y3LyUsc3VwZXJzY3JpcHRHRjcvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV1GJy8lJ29wYXF1ZUdGNy8lK2V4ZWN1dGFibGVHRjcvJSlyZWFkb25seUdGNy8lKWNvbXBvc2VkR0Y3LyUqY29udmVydGVkR0Y3LyUraW1zZWxlY3RlZEdGNy8lLHBsYWNlaG9sZGVyR0Y3LyU2c2VsZWN0aW9uLXBsYWNlaG9sZGVyR0Y3LyUwZm9udF9zdHlsZV9uYW1lR1ErX3BzdHlsZTI1NkYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMjIyMjIyMmVtRicvJSdyc3BhY2VHRmZvLUklbXN1YkdGJDYmLUkjbWlHRiQ2NlEieEYnRi9GMkY1L0Y5USV0cnVlRidGOkY8Rj5GQEZDRkZGSEZKRkxGTkZQRlJGVEZWL0ZaUSdpdGFsaWNGJy1GIzY2LUkjbW5HRiQ2NlEiM0YnRi9GMkY1RjhGOkY8Rj5GQEZDRkZGSEZKRkxGTkZQRlJGVEZWRllGL0YyRjVGYHBGOkY8Rj5GQEZDRkZGSEZKRkxGTkZQRlJGVEZWRmJwLyUvc3Vic2NyaXB0c2hpZnRHUSIwRidGUi1GXXA2I1EhRidGL0YyRjVGOEY6RjxGPkZARkNGRkZIRkpGTEZORlBGUkZURlZGWQ==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzY4LUkjbW9HRiQ2P1EiK0YnLyUnZmFtaWx5R1EwVGltZXN+TmV3flJvbWFuRicvJSVzaXplR1EjMTJGJy8lJWJvbGRHUSZmYWxzZUYnLyUnaXRhbGljR0Y3LyUqdW5kZXJsaW5lR0Y3LyUqc3Vic2NyaXB0R0Y3LyUsc3VwZXJzY3JpcHRHRjcvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV1GJy8lJ29wYXF1ZUdGNy8lK2V4ZWN1dGFibGVHRjcvJSlyZWFkb25seUdGNy8lKWNvbXBvc2VkR0Y3LyUqY29udmVydGVkR0Y3LyUraW1zZWxlY3RlZEdGNy8lLHBsYWNlaG9sZGVyR0Y3LyU2c2VsZWN0aW9uLXBsYWNlaG9sZGVyR0Y3LyUwZm9udF9zdHlsZV9uYW1lR1ErX3BzdHlsZTI1NkYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMjIyMjIyMmVtRicvJSdyc3BhY2VHRmZvLUklbXN1YkdGJDYmLUkjbWlHRiQ2NlEieEYnRi9GMkY1L0Y5USV0cnVlRidGOkY8Rj5GQEZDRkZGSEZKRkxGTkZQRlJGVEZWL0ZaUSdpdGFsaWNGJy1GIzY2LUkjbW5HRiQ2NlEiM0YnRi9GMkY1RjhGOkY8Rj5GQEZDRkZGSEZKRkxGTkZQRlJGVEZWRllGL0YyRjVGYHBGOkY8Rj5GQEZDRkZGSEZKRkxGTkZQRlJGVEZWRmJwLyUvc3Vic2NyaXB0c2hpZnRHUSIwRidGUi1GXXA2I1EhRidGL0YyRjVGOEY6RjxGPkZARkNGRkZIRkpGTEZORlBGUkZURlZGWQ==</Equation> <Font bold="true">a</Font>3 =<Font bold="true"> <Font opaque="false" subscript="false" underline="false" superscript="false" foreground="[0,0,0]" italic="false" executable="false" selection-placeholder="false" size="12" readonly="false" background="[255,255,255]" style="_cstyle282" placeholder="false" family="Times New Roman" font_style_name="_cstyle282">0</Font></Font>         (*)</Text-field><Text-field style="Normal" layout="Normal">Vi udregner (*) :</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L170" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">x1*a1+x2*a2+x3*a3=&lt;0,0,0&gt;</Text-field>
+</Input>
+</Group>
+<Group labelreference="L169" drawlabel="true">
+<Input><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">som er ensbetydende med det line\303\246re ligningssystem hvis totalmatrix er</Font></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L167" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">T:=&lt;a1|a2|a3|&lt;0,0,0&gt;&gt;</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L177" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">ReducedRowEchelonForm(T)</Text-field>
+</Input>
+</Group>
+<Group labelreference="L176" drawlabel="true">
+<Input><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">Vi ser at der er netop \303\251n l\303\270sning, og det er l\303\270sningen </Font><Equation executable="false" style="Normal" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYsLUklbXN1YkdGJDYlLUkjbWlHRiQ2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYlLUkjbW5HRiQ2JFEiMUYnL0Y2USdub3JtYWxGJ0YyRjUvJS9zdWJzY3JpcHRzaGlmdEdRIjBGJy1JI21vR0YkNi1RIj1GJ0Y+LyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0ZJLyUpc3RyZXRjaHlHRkkvJSpzeW1tZXRyaWNHRkkvJShsYXJnZW9wR0ZJLyUubW92YWJsZWxpbWl0c0dGSS8lJ2FjY2VudEdGSS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRlgtRiw2JUYuLUYjNiUtRjs2JFEiMkYnRj5GMkY1RkBGQy1GLDYlRi4tRiM2JS1GOzYkUSIzRidGPkYyRjVGQEZDLUY7NiRRIzAuRidGPi1GLzYjUSFGJy8lK2JhY2tncm91bmRHUS5bMjU1LDI1NSwyNTVdRidGPg==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYsLUklbXN1YkdGJDYlLUkjbWlHRiQ2JVEieEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1GIzYlLUkjbW5HRiQ2JFEiMUYnL0Y2USdub3JtYWxGJ0YyRjUvJS9zdWJzY3JpcHRzaGlmdEdRIjBGJy1JI21vR0YkNi1RIj1GJ0Y+LyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0ZJLyUpc3RyZXRjaHlHRkkvJSpzeW1tZXRyaWNHRkkvJShsYXJnZW9wR0ZJLyUubW92YWJsZWxpbWl0c0dGSS8lJ2FjY2VudEdGSS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRlgtRiw2JUYuLUYjNiUtRjs2JFEiMkYnRj5GMkY1RkBGQy1GLDYlRi4tRiM2JS1GOzYkUSIzRidGPkYyRjVGQEZDLUY7NiRRIzAuRidGPi1GLzYjUSFGJy8lK2JhY2tncm91bmRHUS5bMjU1LDI1NSwyNTVdRidGPg==</Equation></Text-field>
+</Input>
+</Group>
+<Group labelreference="L179" drawlabel="true">
+<Input><Text-field style="Normal" layout="Normal"><Font style="Text" encoding="UTF-8">Der findes alts\303\245 ingen egentlige kombinationer af de tre vekorer som giver nul-vektoren.</Font></Text-field><Text-field style="Normal" layout="Normal"><Font style="Text" encoding="UTF-8">Derfor er de tre vektorer line\303\246rt uafh\303\246ngige.</Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L129" drawlabel="true">
+<Input><Text-field style="Text" layout="Normal"></Text-field><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">Vi ser nu p\303\245 tre andre vektorer hvis koordinater med hensyn til standard e-basen er:</Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L144" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">b1:=&lt;2,2,8&gt;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L146" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">b2:=&lt;3,3,12&gt;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L145" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">b3:=&lt;12,9,42&gt;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L180" drawlabel="true">
+<Input><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">Vi f\303\270lger den samme metode som ovenfor:</Font></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L181" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">T:=&lt;b1|b2|b3|&lt;0,0,0&gt;&gt;</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L149" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">ReducedRowEchelonForm(T)</Text-field>
+</Input>
+</Group>
+<Group labelreference="L150" drawlabel="true">
+<Input><Text-field style="Text" layout="Normal">Rangen af  A = rangen af T = 2, dvs. mindre end antallet af vektorerne.
+<Font encoding="UTF-8">Vektorerne er derfor line\303\246rt afh\303\246ngige.</Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L183" drawlabel="true">
+<Input><Text-field style="Text" layout="Normal"></Text-field><Text-field style="Text" layout="Normal"><Font bold="true">Konklusion:</Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L182" drawlabel="true">
+<Input><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">Da vektors\303\246ttet </Font><Equation executable="false" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUkobWZlbmNlZEdGJDYlLUYjNiotSSVtc3ViR0YkNiUtSSNtaUdGJDYoUSJhRicvJSVib2xkR1EldHJ1ZUYnLyUnaXRhbGljR1EmZmFsc2VGJy8lK2V4ZWN1dGFibGVHRjwvJSxtYXRodmFyaWFudEdRJWJvbGRGJy8lK2ZvbnR3ZWlnaHRHRkEtRiM2Ji1JI21uR0YkNiVRIjFGJ0Y9L0ZAUSdub3JtYWxGJy9GO0Y5Rj0vRkBRJ2l0YWxpY0YnLyUvc3Vic2NyaXB0c2hpZnRHUSIwRictSSNtb0dGJDYuUSIsRidGPUZKLyUmZmVuY2VHRjwvJSpzZXBhcmF0b3JHRjkvJSlzdHJldGNoeUdGPC8lKnN5bW1ldHJpY0dGPC8lKGxhcmdlb3BHRjwvJS5tb3ZhYmxlbGltaXRzR0Y8LyUnYWNjZW50R0Y8LyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMzMzMzMzM2VtRictRjE2JUYzLUYjNiYtRkc2JVEiMkYnRj1GSkZMRj1GTUZPRlItRjE2JUYzLUYjNiYtRkc2JVEiM0YnRj1GSkZMRj1GTUZPLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV1GJ0Y9RkpGPUZKLUZTNi5RIn5GJ0Y9RkpGVi9GWUY8RlpGZm5GaG5Gam5GXG9GXm8vRmJvRmBvRmJwRj1GSg==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUkobWZlbmNlZEdGJDYlLUYjNiotSSVtc3ViR0YkNiUtSSNtaUdGJDYoUSJhRicvJSVib2xkR1EldHJ1ZUYnLyUnaXRhbGljR1EmZmFsc2VGJy8lK2V4ZWN1dGFibGVHRjwvJSxtYXRodmFyaWFudEdRJWJvbGRGJy8lK2ZvbnR3ZWlnaHRHRkEtRiM2Ji1JI21uR0YkNiVRIjFGJ0Y9L0ZAUSdub3JtYWxGJy9GO0Y5Rj0vRkBRJ2l0YWxpY0YnLyUvc3Vic2NyaXB0c2hpZnRHUSIwRictSSNtb0dGJDYuUSIsRidGPUZKLyUmZmVuY2VHRjwvJSpzZXBhcmF0b3JHRjkvJSlzdHJldGNoeUdGPC8lKnN5bW1ldHJpY0dGPC8lKGxhcmdlb3BHRjwvJS5tb3ZhYmxlbGltaXRzR0Y8LyUnYWNjZW50R0Y8LyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMzMzMzMzM2VtRictRjE2JUYzLUYjNiYtRkc2JVEiMkYnRj1GSkZMRj1GTUZPRlItRjE2JUYzLUYjNiYtRkc2JVEiM0YnRj1GSkZMRj1GTUZPLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV1GJ0Y9RkpGPUZKLUZTNi5RIn5GJ0Y9RkpGVi9GWUY8RlpGZm5GaG5Gam5GXG9GXm8vRmJvRmBvRmJwRj1GSg==</Equation><Font encoding="UTF-8">er line\303\246rt uafh\303\246ngige, udg\303\270r de en </Font><Font bold="true">basis</Font><Font encoding="UTF-8"> for m\303\246ngden af rumvektorer.
+Da vektors\303\246ttet </Font><Equation executable="false" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUkobWZlbmNlZEdGJDYlLUYjNiotSSVtc3ViR0YkNiUtSSNtaUdGJDYoUSJiRicvJSVib2xkR1EldHJ1ZUYnLyUnaXRhbGljR1EmZmFsc2VGJy8lK2V4ZWN1dGFibGVHRjwvJSxtYXRodmFyaWFudEdRJWJvbGRGJy8lK2ZvbnR3ZWlnaHRHRkEtRiM2Ji1JI21uR0YkNiVRIjFGJ0Y9L0ZAUSdub3JtYWxGJy9GO0Y5Rj0vRkBRJ2l0YWxpY0YnLyUvc3Vic2NyaXB0c2hpZnRHUSIwRictSSNtb0dGJDYuUSIsRidGPUZKLyUmZmVuY2VHRjwvJSpzZXBhcmF0b3JHRjkvJSlzdHJldGNoeUdGPC8lKnN5bW1ldHJpY0dGPC8lKGxhcmdlb3BHRjwvJS5tb3ZhYmxlbGltaXRzR0Y8LyUnYWNjZW50R0Y8LyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMzMzMzMzM2VtRictRjE2JUYzLUYjNiYtRkc2JVEiMkYnRj1GSkZMRj1GTUZPRlItRjE2JUYzLUYjNiYtRkc2JVEiM0YnRj1GSkZMRj1GTUZPLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV1GJ0Y9RkpGPUZKLUZTNi5RIn5GJ0Y9RkpGVi9GWUY8RlpGZm5GaG5Gam5GXG9GXm8vRmJvRmBvRmJwRj1GSg==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUkobWZlbmNlZEdGJDYlLUYjNiotSSVtc3ViR0YkNiUtSSNtaUdGJDYoUSJiRicvJSVib2xkR1EldHJ1ZUYnLyUnaXRhbGljR1EmZmFsc2VGJy8lK2V4ZWN1dGFibGVHRjwvJSxtYXRodmFyaWFudEdRJWJvbGRGJy8lK2ZvbnR3ZWlnaHRHRkEtRiM2Ji1JI21uR0YkNiVRIjFGJ0Y9L0ZAUSdub3JtYWxGJy9GO0Y5Rj0vRkBRJ2l0YWxpY0YnLyUvc3Vic2NyaXB0c2hpZnRHUSIwRictSSNtb0dGJDYuUSIsRidGPUZKLyUmZmVuY2VHRjwvJSpzZXBhcmF0b3JHRjkvJSlzdHJldGNoeUdGPC8lKnN5bW1ldHJpY0dGPC8lKGxhcmdlb3BHRjwvJS5tb3ZhYmxlbGltaXRzR0Y8LyUnYWNjZW50R0Y8LyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMzMzMzMzM2VtRictRjE2JUYzLUYjNiYtRkc2JVEiMkYnRj1GSkZMRj1GTUZPRlItRjE2JUYzLUYjNiYtRkc2JVEiM0YnRj1GSkZMRj1GTUZPLyUrYmFja2dyb3VuZEdRLlsyNTUsMjU1LDI1NV1GJ0Y9RkpGPUZKLUZTNi5RIn5GJ0Y9RkpGVi9GWUY8RlpGZm5GaG5Gam5GXG9GXm8vRmJvRmBvRmJwRj1GSg==</Equation><Font encoding="UTF-8">er line\303\246rt afh\303\246ngige, udg\303\270r de ikke en </Font><Font bold="true">basis</Font><Font encoding="UTF-8"> for m\303\246ngden af rumvektorer.</Font></Text-field><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">Hvis de afs\303\246ttes ud fra Origo ligger b-vektorerne i samme plan.</Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L184" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font encoding="UTF-8">Unders\303\270ge om tre vektorer i rummet er en </Font><Font italic="true">basis</Font> vha. determinant</Text-field></Title>
+<Group labelreference="L190" drawlabel="true">
+<Input><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">Vi betrager igen de tre vektorer fra det foreg\303\245ende eksempel</Font>:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L189" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">a1:=&lt;2,2,7&gt;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L187" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">a2:=&lt;3,3,1&gt;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L188" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">a3:=&lt;12,9,2&gt;:</Text-field>
+</Input>
+</Group>
+<Group labelreference="L186" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">Der er det rigtige antal, 3. S\303\245 vi beh\303\270ver blot vise de er line\303\246rt uafh\303\246ngige. Der har vi gjort ovenfor, s\303\245 de udg\303\270r en basis! Men her benytter vi anden metode.</Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L191" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Normal" layout="Normal"><Font encoding="UTF-8">De er line\303\246rt uafh\303\246ngige netop n\303\245r matricen der har de tre vektorer som s\303\270jler, har fuld rang, dvs. rangen 3. Det er tilf\303\246ldet netop n\303\245r determinanten af den n\303\246vnte matrix er f</Font><Font bold="true">orskellig fra 0.</Font></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" hide-output="false" labelreference="L192" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">A:=&lt;a1|a2|a3&gt;</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" hide-output="false" labelreference="L193" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Determinant(A)</Text-field>
+</Input>
+</Group>
+<Group labelreference="L194" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Font encoding="UTF-8">Hermed vist at de tre vektorer er en basis for m\303\246ngden af vektorer i rummet.</Font></Text-field>
+</Input>
+</Group>
+<Group labelreference="L195" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+</Input>
+</Group>
+</Section>
+</Worksheet>
