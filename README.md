@@ -9,7 +9,7 @@ På Windows kan den f.eks. hedde `C:\Program Files\Maple 2020\lib`.
 På Mac OS X kan den efter sigende f.eks. hedde `/Library/Frameworks/Maple.framework/Versions/2018/lib`.
 
 `MichaelPakken.mla` gør det muligt at kalde almindeligt brugte funktioner, se en oversigt nedenfor. 
-`MichaelPakken.help` gør det muligt at søge igennem alle Mapledemoerne med Maples søgefunktion eller ved at skrive `?søgeord` i Maple. Der ligger også dokumentation for nogle af funktionerne i Michael-pakken.
+`MichaelPakken.help` gør det muligt at søge igennem alle Mapledemoerne med Maples søgefunktion eller ved at skrive `?søgeord` i Maple. Der ligger også dokumentation for nogle af funktionerne i Michael-pakken. Hvis man ikke søger på det præcise navn for Mapledemoen er det meget sandsynligt, at nogle andre hjælpesider åbnes op først. I så fald kan man rulle ned til 'User Help' ude i siden af Maples søgevindue, og se hvilke hjælpefiler, der ligger dér.
 
 # Load pakken
 Pakken loades ved at skrive `with(Michael)` i en matboks.
@@ -21,7 +21,7 @@ På Windows er den fulde sti til .ini-filen `C:\Program Files\Maple 2020\Users\m
 - **kryds(x,y)**: Udregn krydsproduktet mellem 3D-vektorer (virker for datatyperne liste, vektor og mængde).
 - **længde(x)**: Beregner alm. Euklidisk længde af en vektor (virker for datatyperne liste, vektor og mængde).
 - **vop(x)**: Udtag elementerne fra en vektor (virker for datatyperne liste, vektor og mængde).
-- **det(A)**: Kort for LinearAlgebra[Determinant](A).
+- **det(A)**: Kort for LinearAlgebra\[Determinant\](A).
 - **gradient(expr)**: Beregner gradienten. Forsøger selv at bestemme variablene i expr, men hvis det ikke virker kan man tilføje en liste, der fortæller hvilke variable, der er tale om, som andet argument.
 - **Hessematrix(expr)**: Beregner Hessematricen. Forsøger selv at bestemme variablene i expr, men hvis det ikke virker kan man tilføje en liste, der fortæller hvilke variable, der er tale om, som andet argument.
 
@@ -31,7 +31,17 @@ På Windows er den fulde sti til .ini-filen `C:\Program Files\Maple 2020\Users\m
 Når nye funktioner er skrevet gøres følgende
 1. Nye funktioner tilføjes som tekst i 'MichaelPakken.mpl' i modulet 'Michael'. Navnet på den nye funktion tilføjes til linjen `export` i toppen.
 2. Filen CreateMichaelPakke køres fra start til slut (den flytter den gamle MichaelPakke til mappen Legacy og gemmer en ny 'MichaelPakken.mla'-fil i hoved-mappen).
-3. Ændringerne Comittes med Git.
+3. Ændringerne comittes med Git.
+
+Nye hjælpefiler laves på følgende måde
+1. Skriv hjælpefilen, enten som .mw eller .txt
+2. Gem filen i MichaelPakken/Kodning/Help Database
+3. Kør anden sektion i CreateHelpDatabase, som tilføjer nye filer til databasefilen MichaelPakken.help
+4. Ændringer comittes med Git
+
+For ikke at behøve at kopiere MichaelPakken.mla og MichaelPakken.help til lib-mappen hver gang de opdateres, har jeg tilføjet flg. til min .ini-fil:
+`libname := "sti til dette repository", libname:`
+
 
 # Kommende funktioner
 'RowOperationator' - laver flere RowOperations på én gang med simpel notation.
