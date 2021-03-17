@@ -157,7 +157,7 @@ if not (topic in CurrentTopics) then
 fullpath:=JoinPath([DatabaseDir,file]):
 makehelp(topic,fullpath,helpFile,showhelp=false):
 fi:
-od:<Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+od:<Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L154" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -232,20 +232,20 @@ od:</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L136" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">restart:with(HelpTools):with(Database):with(FileTools):</Text-field>
+<Input><Text-field style="Text" layout="Normal">restart:with(HelpTools):with(Database):with(FileTools):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" labelreference="L138" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">helpFile:=JoinPath([ParentDirectory(currentdir()), &quot;MichaelPakken.help&quot;]):
+<Input><Text-field style="Text" layout="Normal">helpFile:=JoinPath([ParentDirectory(currentdir()), &quot;MichaelPakken.help&quot;]):
 DatabaseDir:=JoinPath([currentdir(), &quot;Help Database&quot;]):</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L140" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">allfiles:=ListDirectory(DatabaseDir):</Text-field>
+<Input><Text-field style="Text" layout="Normal">allfiles:=ListDirectory(DatabaseDir):</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L141" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">for file in allfiles do
+<Input><Text-field style="Text" layout="Normal">for file in allfiles do
 topic:=cat(&quot;Michael,&quot;, Basename(file)):
 RemoveFromDatabase(topic, helpFile):
 fullpath:=JoinPath([DatabaseDir,file]):
@@ -254,12 +254,12 @@ od:</Text-field>
 </Input>
 </Group>
 <Group view="code" labelreference="L173" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
+<Input><Text-field style="Text" layout="Normal"></Text-field>
 </Input>
 </Group></Presentation-Block>
 </Section><Presentation-Block>
 <Group view="presentation" inline-output="false" labelreference="L118" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group></Presentation-Block>
 </Worksheet>

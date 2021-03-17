@@ -2,28 +2,36 @@
 Til alle dem der savner Gym-pakken.
 
 # Installation
-Læg `MichaelPakken.mla` og evt. også `MichaelPakken.help` ind i Maples lib-mappe.
+Læg `MichaelPakken.mla` og evt. også `MichaelPakken.help` og `Integrator8.mw`  ind i Maples lib-mappe.
 
 Stien til lib-mappen kan findes ved at skrive `libname` i en matboks i Maple.
 På Windows kan den f.eks. hedde `C:\Program Files\Maple 2020\lib`.
-På Mac OS X kan den efter sigende f.eks. hedde `/Library/Frameworks/Maple.framework/Versions/2018/lib`.
+På MacOS kan den hedde `/Library/Frameworks/Maple.framework/Versions/2020/lib`.
 
-`MichaelPakken.mla` gør det muligt at kalde almindeligt brugte funktioner, se en oversigt nedenfor. 
+`MichaelPakken.mla` gør det muligt at kalde almindeligt brugte funktioner, se en oversigt nedenfor.
 `MichaelPakken.help` gør det muligt at søge igennem alle Mapledemoerne med Maples søgefunktion eller ved at skrive `?søgeord` i Maple. Der ligger også dokumentation for nogle af funktionerne i Michael-pakken. Hvis man ikke søger på det præcise navn for Mapledemoen er det meget sandsynligt, at nogle andre hjælpesider åbnes op først. I så fald kan man rulle ned til 'User Help' ude i siden af Maples søgevindue, og se hvilke hjælpefiler, der ligger dér.
 
 # Load pakken
 Pakken loades ved at skrive `with(Michael)` i en matboks.
-Hvis du ønsker at pakken skal loades automatisk hver gang Maple startes (og hver gang der køres en *restart*) kan du tilføje `with(Michael)` til Maples .ini-fil.
-På Windows er den fulde sti til .ini-filen `C:\Program Files\Maple 2020\Users\maple.ini`. Den kan oprettes hvis den ikke findes i forvejen. Filen kan redigeres i Notepad el.lign..
+Hvis du ønsker at pakken skal loades automatisk hver gang Maple startes (og hver gang der køres en *restart*) kan du tilføje `with(Michael)` til Maples initialiserings-fil.
+På Windows er den fulde sti til .ini-filen `C:\Program Files\Maple 2020\Users\maple.ini`.
+På MacOS er den `/Library/Frameworks/Maple.framework/Versions/2020/lib/init` (bemærk ingen file extension).
+Filen kan oprettes hvis den ikke findes i forvejen. Filen kan redigeres i Notepad el.lign..
 
 # Funktioner i pakken
-- **prik(x,y)**: Udregn prikprodukt mellem vektorer (virker for datatyperne liste, vektor og mængde).
-- **kryds(x,y)**: Udregn krydsproduktet mellem 3D-vektorer (virker for datatyperne liste, vektor og mængde).
-- **længde(x)**: Beregner alm. Euklidisk længde af en vektor (virker for datatyperne liste, vektor og mængde).
-- **vop(x)**: Udtag elementerne fra en vektor (virker for datatyperne liste, vektor og mængde).
+Næsten alle vektorfunktioner fungerer også, hvis der passes en liste eller mængde i stedet.
+- **vop(x)**: Udtager elementerne fra en vektor (en generalisering af **op**).
+- **prik(x,y)**: Udregn prikprodukt mellem vektorer.
+- **prikc(x,y)**: Udregn det standard hermitiske indre produkt mellem vektorer (dvs. **prik** inkl. konjugering).
+- **kryds(x,y)**: Udregn krydsproduktet mellem 3D-vektorer.
+- **rum(x,y,z)**: Rumprodukt mellem 3 3D-vektorer.
+- **længde(x)**: Beregner alm. Euklidisk længde af en vektor.
+- **grad(expr,variabel_liste)**: Beregner gradienten af en vektor med hensyn til angivne variable.
 - **det(A)**: Kort for LinearAlgebra\[Determinant\](A).
-- **gradient(expr)**: Beregner gradienten. Forsøger selv at bestemme variablene i expr, men hvis det ikke virker kan man tilføje en liste, der fortæller hvilke variable, der er tale om, som andet argument.
-- **Hessematrix(expr)**: Beregner Hessematricen. Forsøger selv at bestemme variablene i expr, men hvis det ikke virker kan man tilføje en liste, der fortæller hvilke variable, der er tale om, som andet argument.
+- **div(V)**: Divergens for vektorfelt.
+- **rot(V)**: Rotation for vektorfelt.
+- **Hessematrix(expr, variabel_liste)**: Beregner Hessematricen.
+- **GetJacobi(parameterfremstilling, variabel_liste)**: Beregner Jacobi for en parameterfremstilling. Finder selv ud af, hvilken slags Jacobi-fkt., der er tale om. Kan med fordel kombineres med `assuming`, f.eks. `simplify(GetJacobi(r(u,v),[u,v])) assuming u>=0, u<=2*Pi, v>=0`.
 
 
 
