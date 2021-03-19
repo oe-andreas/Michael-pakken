@@ -1,6 +1,6 @@
 Michael := module()
 options package;
-export vop, prik, prikc, kryds, længde, grad, div, rot, Hessematrix, det,rum, GetJacobi;
+export vop, prik, prikc, kryds, længde, grad, div, rot, Hessematrix, det,rum, GetJacobi, TrappeMetode;
 prikc := (x, y) -> LinearAlgebra[DotProduct](convert(x, Vector), convert(y, Vector), conjugate = true);
 prik := (x, y) -> LinearAlgebra[DotProduct](convert(x, Vector), convert(y, Vector), conjugate = false);
 kryds := (x, y) -> convert(VectorCalculus[CrossProduct](convert(x, Vector), convert(y, Vector)), Vector);
@@ -37,6 +37,13 @@ elif nops(vars) = 3 then
   rw := diff(r, vars[3]);
   return abs(rum(ru, rv, rw));
 end if;
-end proc
+end proc;
+
+TrappeMetode := proc(V) local x, y, z, t;
+if op(eval(V))[3] = operator then return simplify(int(V(t, 0)[1], t = 0 .. x) + int(V(x, t)[2], t = 0 .. y));
+elif op(eval(V))[4] = operator then return simplify(int(V(t, 0, 0)[1], t = 0 .. x) + int(V(x, t, 0)[2], t = 0 .. y) + int(V(x, y, t)[3], t = 0 .. z));
+else print("V skal være en funktion, ikke et udtryk (f.eks. skal der ikke stå V(x,y,z), men bare V)");
+end if;
+end proc;
 
 end module;

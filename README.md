@@ -32,6 +32,7 @@ Næsten alle vektorfunktioner fungerer også, hvis der passes en liste eller mæ
 - **rot(V)**: Rotation for vektorfelt.
 - **Hessematrix(expr, variabel_liste)**: Beregner Hessematricen.
 - **GetJacobi(parameterfremstilling, variabel_liste)**: Beregner Jacobi for en parameterfremstilling. Finder selv ud af, hvilken slags Jacobi-fkt., der er tale om. Kan med fordel kombineres med `assuming`, f.eks. `simplify(GetJacobi(r(u,v),[u,v])) assuming u>=0, u<=2*Pi, v>=0`.
+- **TrappeMetode(V)**: Beregner kurveintegralet af V fra origo til et vilkårligt punkt (x,y,z). Det kan nemt tjekkes om V er et gradientvektorfelt ved at beregne **grad(TrappeMetode(V),variabel_liste)**, og se, om det er det samme som V.
 
 
 
