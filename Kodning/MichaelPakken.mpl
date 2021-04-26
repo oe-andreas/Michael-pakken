@@ -10,7 +10,7 @@ vop := proc(X) op(convert(X, list)); end proc;
 det := A -> LinearAlgebra[Determinant](A);
 
 grad:=(X,Y)->convert(linalg[grad](X,Y),Vector[column]):
-div:=V->VectorCalculus[Divergence](convert(V,Vector)):
+div:=V->VectorCalculus[Divergence](V):
 rot:=proc(X) uses VectorCalculus;BasisFormat(false);Curl(convert(X,Vector))  end proc:
 
 Hessematrix := proc(expr, variables := []) local vars;
