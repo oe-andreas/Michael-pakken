@@ -50,15 +50,12 @@ Nye hjælpefiler laves på følgende måde
 4. Ændringer comittes med Git
 
 For ikke at behøve at kopiere MichaelPakken.mla og MichaelPakken.help til lib-mappen hver gang de opdateres, har jeg tilføjet flg. til min .ini-fil:
-`libname := "sti til dette repository", libname:`
+`libname := "sti til dette repository"`.
 
 
 # Kommende funktioner
 'RowOperationator' - laver flere RowOperations på én gang med simpel notation.
-'Jacobian' - finder selv ud af hvor mange dimensioner. Indbyg mulighed for antagelse om reel, større end værdi, mindre end værdi...
-'FindQ' - laver Eigenvectors, ortonormaliserer med Gram-Scmidt, og samler i Q med det(Q)=1 og samme rækkefølge hver gang (sorteret efter egenværdier måske? Evt. lav også FindLambda som så giver samme rækkefølge, og OrtDiag, der giver begge)
-'vektorligning' Solve for alle koordinater på 1 gang
+'vektorligning' Solve for alle koordinater på 1 gang.
 
-Gympakken:
+Fra gympakken:
 Trigonometriske funktioner med grader
-'det' - kort determinant
