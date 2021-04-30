@@ -1,6 +1,6 @@
 Michael := module()
 options package;
-export vop, prik, prikc, kryds, længde, grad, div, rot, Hessematrix, det,rum, GetJacobi, TrappeMetode, MyConstants;
+export vop, prik, prikc, kryds, længde, grad, div, rot, Hessematrix, det,rum, GetJacobi, TrappeMetode, MyConstants, Diagonalize;
 prikc := (x, y) -> LinearAlgebra[DotProduct](convert(x, Vector), convert(y, Vector), conjugate = true);
 prik := (x, y) -> LinearAlgebra[DotProduct](convert(x, Vector), convert(y, Vector), conjugate = false);
 kryds := (x, y) -> convert(VectorCalculus[CrossProduct](convert(x, Vector), convert(y, Vector)), Vector);
@@ -45,6 +45,8 @@ elif op(eval(V))[4] = operator then return simplify(int(V(t, 0, 0)[1], t = 0 .. 
 else print("V skal være en funktion, ikke et udtryk (f.eks. skal der ikke stå V(x,y,z), men bare V)");
 end if;
 end proc;
+
+Diagonalize := proc(A, unitarily := true, positive := true) local evals, evecs, Lambda, cols, i, S, dim, col, lambda1; if unitarily and `not`(Equal((HermitianTranspose(A)) . A, A . (HermitianTranspose(A)))) then error "Not unitarily diagonalizable. Use 'unitarily=false' to try non-unitary diagonalization"; end if; evals, S := Eigenvectors(A); Lambda := DiagonalMatrix(evals); dim := op(A)[2]; if `længde`(S[1 .. dim, dim]) = 0 then error "Not diagonalizable, too few linearly independent eigenvectors"; end if; if unitarily then S := Matrix(GramSchmidt([seq(S[1 .. dim, i], i = 1 .. dim)], normalized)); end if; if positive and `not`(0 <= Determinant(S)) then col := S[1 .. dim, 1]; S[1 .. dim, 1] := S[1 .. dim, 2]; S[1 .. dim, 2] := col; lambda1 := Lambda[1, 1]; Lambda[1, 1] := Lambda[2, 2]; Lambda[2, 2] := lambda1; end if; return Lambda, S; end proc:
 
 
 MyConstants := proc(constant); #taken from appendix G of University Physics
