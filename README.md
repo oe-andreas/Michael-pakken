@@ -36,11 +36,12 @@ Næsten alle vektorfunktioner fungerer også, hvis der passes en liste eller mæ
 - **Diagonalize(A)**: Laver unitær diagonalisering af A (returnerer Q og Lambda, så `A=Q.Lambda.Transpose(Q))`. Man kan tilføje `unitarily = false` for at lave ikke-unitær diagonalisering, så `A = Q.Lambda.Q^(-1)`, og `positive = false` for at den ikke skal returnere en Q med positiv determinant.
 
 
-
 # Til udviklere (mig)
+For at nedenstående virker skal hele repositoriet være gemt et samlet sted på computeren.
+
 Når nye funktioner er skrevet gøres følgende
 1. Nye funktioner tilføjes som tekst i 'MichaelPakken.mpl' i modulet 'Michael'. Navnet på den nye funktion tilføjes til linjen `export` i toppen.
-2. Filen CreateMichaelPakke køres fra start til slut (den flytter den gamle MichaelPakke til mappen Legacy og gemmer en ny 'MichaelPakken.mla'-fil i hoved-mappen).
+2. Filen CreateMichaelPakke.mw køres fra start til slut (den flytter den gamle MichaelPakken.mpl til mappen Legacy og gemmer en ny 'MichaelPakken.mla'-fil i hoved-mappen).
 3. Ændringerne comittes med Git.
 
 Nye hjælpefiler laves på følgende måde
@@ -50,7 +51,7 @@ Nye hjælpefiler laves på følgende måde
 4. Ændringer comittes med Git
 
 For ikke at behøve at kopiere MichaelPakken.mla og MichaelPakken.help til lib-mappen hver gang de opdateres, har jeg tilføjet flg. til min .ini-fil:
-`libname := "sti til dette repository"`.
+`libname := "sti til dette repository, libname"`, dvs. stien til dette repository tilføjes til libname-sekvensen.
 
 
 # Kommende funktioner
