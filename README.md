@@ -36,7 +36,7 @@ Næsten alle vektorfunktioner fungerer også, hvis der passes en liste eller mæ
 - **Diagonalize(A)**: Laver unitær diagonalisering af A (returnerer Q og Lambda, så `A=Q.Lambda.Transpose(Q))`. Man kan tilføje `unitarily = false` for at lave ikke-unitær diagonalisering, så `A = Q.Lambda.Q^(-1)`, og `positive = false` for at den ikke skal returnere en Q med positiv determinant.
 
 # At ændre i Michael-pakken
-Hvis man gerne vil tilføje noget til sin egen Michael-pakke, skal funktionerne skrives ind i 'MichaelPakken.mpl' og dernæst laves om til en .mla-fil med Maples `savelib`-kommando. Den mest strømlinede måde at gøre det på er at bruge Maple-filen 'CreateMichaelPakke.mw', men den kræver at man downloader hele dette repository (se 'Til udviklere' nedenfor).
+Hvis man gerne vil tilføje noget til sin egen Michael-pakke, skal funktionerne skrives ind i 'MichaelPakken.mpl', laves om til en .mla-fil med Maples `savelib`-kommando, og til sidst kopieres ind i lib-mappen. Den mest strømlinede måde at gøre det på er at bruge Maple-filen 'CreateMichaelPakke.mw', men den kræver at man downloader hele dette repository (se 'Til udviklere' nedenfor).
 
 # Til udviklere (mig)
 OBS: For at nedenstående virker skal hele repositoriet være gemt et samlet sted på computeren. Man kan passende bare synce med Git, så kan man også nemt hente den nyeste version, eller uploade sine egne tilføjelser.
