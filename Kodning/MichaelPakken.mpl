@@ -11,7 +11,7 @@ det := A -> LinearAlgebra[Determinant](A);
 
 grad:=(X,Y)->convert(linalg[grad](X,Y),Vector[column]):
 div:=V->VectorCalculus[Divergence](V):
-rot:=proc(X) uses VectorCalculus;BasisFormat(false);Curl(convert(X,Vector))  end proc:
+rot:=proc(X) uses VectorCalculus;BasisFormat(false);Curl(X)  end proc:
 
 Hessematrix := proc(expr, variables := []) local vars;
 vars := variables; if vars = [] then vars := indets(expr, 'name'); end if;
