@@ -50,7 +50,7 @@ Nye hjælpefiler laves på følgende måde
 4. Ændringer comittes med Git
 
 For ikke at behøve at kopiere MichaelPakken.mla og MichaelPakken.help til lib-mappen hver gang de opdateres, har jeg tilføjet flg. til min .ini-fil:
-`libname := "sti til dette repository"`.
+`libname := "sti til dette repository, libname"`, dvs. stien til dette repository tilføjes til libname-sekvensen.
 
 
 # Kommende funktioner
