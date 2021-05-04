@@ -39,9 +39,9 @@ Næsten alle vektorfunktioner fungerer også, hvis der passes en liste eller mæ
 Hvis man gerne vil tilføje noget til sin egen Michael-pakke, skal funktionerne skrives ind i 'MichaelPakken.mpl', laves om til en .mla-fil med Maples `savelib`-kommando, og til sidst kopieres ind i lib-mappen. Den mest strømlinede måde at gøre det på er at bruge Maple-filen 'CreateMichaelPakke.mw', men den kræver at man downloader hele dette repository (se 'Til udviklere' nedenfor).
 
 # Til udviklere (mig)
-OBS: For at nedenstående virker skal hele repositoriet være gemt et samlet sted på computeren. Man kan passende bare synce med Git, så kan man også nemt hente den nyeste version, eller uploade sine egne tilføjelser.
+OBS: For at nedenstående virker skal hele repositoriet være gemt et samlet sted på computeren. Man kan passende bare synce med Git, så man også nemt kan hente den nyeste version eller uploade sine egne tilføjelser.
 For ikke at behøve at kopiere MichaelPakken.mla og MichaelPakken.help til lib-mappen hver gang de opdateres, har jeg tilføjet flg. til min .ini-fil:
-`libname := "sti til Michael-pakken-mappe, libname"`, dvs. stien til dette repository tilføjes til variablen `libname`, som er den liste af mapper, Maple leder efter pakker i.
+`libname := "sti til Michael-pakken-mappe", libname`, dvs. stien til dette repository tilføjes til variablen `libname`, som er den liste af mapper, Maple leder efter pakker i.
 
 Når nye funktioner er skrevet gøres følgende
 1. Nye funktioner tilføjes som tekst i 'MichaelPakken.mpl' i modulet 'Michael'. Navnet på den nye funktion tilføjes til linjen `export` i toppen.
