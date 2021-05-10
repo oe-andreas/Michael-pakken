@@ -35,27 +35,28 @@ Næsten alle vektorfunktioner fungerer også, hvis der passes en liste eller mæ
 - **TrappeMetode(V)**: Beregner kurveintegralet af V fra origo til et vilkårligt punkt (x,y,z). Det kan nemt tjekkes om V er et gradientvektorfelt ved at beregne **grad(TrappeMetode(V),variabel_liste)**, og se, om det er det samme som V.
 - **Diagonalize(A)**: Laver unitær diagonalisering af A (returnerer Q og Lambda, så `A=Q.Lambda.Transpose(Q))`. Man kan tilføje `unitarily = false` for at lave ikke-unitær diagonalisering, så `A = Q.Lambda.Q^(-1)`, og `positive = false` for at den ikke skal returnere en Q med positiv determinant.
 
+# At ændre i Michael-pakken
+Hvis man gerne vil tilføje noget til sin egen Michael-pakke, skal funktionerne skrives ind i 'MichaelPakken.mpl', laves om til en .mla-fil med Maples `savelib`-kommando, og til sidst kopieres ind i lib-mappen. Den mest strømlinede måde at gøre det på er at bruge Maple-filen 'CreateMichaelPakke.mw', men den kræver at man downloader hele dette repository (se 'Til udviklere' nedenfor).
 
 # Til udviklere (mig)
-For at nedenstående virker skal hele repositoriet være gemt et samlet sted på computeren.
+OBS: For at nedenstående virker skal hele repositoriet være gemt et samlet sted på computeren. Man kan passende bare synce med Git, så man også nemt kan hente den nyeste version eller uploade sine egne tilføjelser.
+For ikke at behøve at kopiere MichaelPakken.mla og MichaelPakken.help til lib-mappen hver gang de opdateres, har jeg tilføjet flg. til min .ini-fil:
+`libname := "sti til Michael-pakken-mappe", libname`, dvs. stien til dette repository tilføjes til variablen `libname`, som er den liste af mapper, Maple leder efter pakker i.
 
 Når nye funktioner er skrevet gøres følgende
 1. Nye funktioner tilføjes som tekst i 'MichaelPakken.mpl' i modulet 'Michael'. Navnet på den nye funktion tilføjes til linjen `export` i toppen.
 2. Filen CreateMichaelPakke.mw køres fra start til slut (den flytter den gamle MichaelPakken.mpl til mappen Legacy og gemmer en ny 'MichaelPakken.mla'-fil i hoved-mappen).
-3. Ændringerne comittes med Git.
+3. Ændringerne comittes evt. med Git.
 
 Nye hjælpefiler laves på følgende måde
 1. Skriv hjælpefilen, enten som .mw eller .txt
 2. Gem filen i MichaelPakken/Kodning/Help Database
 3. Kør anden sektion i CreateHelpDatabase, som tilføjer nye filer til databasefilen MichaelPakken.help
-4. Ændringer comittes med Git
+4. Ændringer comittes evt. med Git
 
-For ikke at behøve at kopiere MichaelPakken.mla og MichaelPakken.help til lib-mappen hver gang de opdateres, har jeg tilføjet flg. til min .ini-fil:
-`libname := "sti til dette repository, libname"`, dvs. stien til dette repository tilføjes til libname-sekvensen.
-
-
-# Kommende funktioner
+# Idéer til funktioner
 'RowOperationator' - laver flere RowOperations på én gang med simpel notation.
+
 'vektorligning' Solve for alle koordinater på 1 gang.
 
 Fra gympakken:
