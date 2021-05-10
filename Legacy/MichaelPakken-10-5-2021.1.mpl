@@ -1,6 +1,6 @@
 Michael := module()
 options package;
-export vop, prik, prikc, kryds, længde, længdec, grad, div, rot, Hessematrix, det,rum, GetJacobi, TrappeMetode, MyConstants, Diagonalize, Stamvektorfelt;
+export vop, prik, prikc, kryds, længde, længdec, grad, div, rot, Hessematrix, det,rum, GetJacobi, TrappeMetode, MyConstants, Diagonalize;
 prikc := (x, y) -> LinearAlgebra[DotProduct](convert(x, Vector), convert(y, Vector), conjugate = true);
 prik := (x, y) -> LinearAlgebra[DotProduct](convert(x, Vector), convert(y, Vector), conjugate = false);
 kryds := (x, y) -> convert(VectorCalculus[CrossProduct](convert(x, Vector), convert(y, Vector)), Vector);
@@ -68,9 +68,6 @@ elif constant = "epsilon_0" then return 1/(MyConstants("mu_0")*MyConstants("c")^
 else print("Du skal angive det almindelige symbol for konstanten med citationstegn")
 end if;
 end proc;
-
-Stamvektorfelt := proc(V, silent := true) local W, i; W := unapply(kryds(-<x, y, z>, <seq(int(u*V(u*x, u*y, u*z)[i], u = 0 .. 1), i = 1 .. 3)>), [x, y, z]); if silent and `not`(Equal(rot(W)(x, y, z), V(x, y, z))) then print("Dette er *ikke* et stamvektorfelt"); end if; return W; end proc:
-
 
 
 end module;
