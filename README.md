@@ -26,14 +26,21 @@ Næsten alle vektorfunktioner fungerer også, hvis der passes en liste eller mæ
 - **kryds(x,y)**: Udregn krydsproduktet mellem 3D-vektorer.
 - **rum(x,y,z)**: Rumprodukt mellem 3 3D-vektorer.
 - **længde(x)**: Beregner alm. Euklidisk længde af en vektor.
+- **længdec(x)**: Beregner alm. Euklidisk længde af en vektor med kompleks konjugering.
 - **grad(expr,variabel_liste)**: Beregner gradienten af en vektor med hensyn til angivne variable.
 - **det(A)**: Kort for LinearAlgebra\[Determinant\](A).
-- **div(V)**: Divergens for vektorfelt.
+- **div(V)**: Divergens for vektorfelt (V skal være en funktion, ikke et udtryk, altså f.eks. `V` ikke `V(x,y,z)`).
 - **rot(V)**: Rotation for vektorfelt.
 - **Hessematrix(expr, variabel_liste)**: Beregner Hessematricen.
-- **GetJacobi(parameterfremstilling, variabel_liste)**: Beregner Jacobi for en parameterfremstilling. Finder selv ud af, hvilken slags Jacobi-fkt., der er tale om. Kan med fordel kombineres med `assuming`, f.eks. `simplify(GetJacobi(r(u,v),[u,v])) assuming u>=0, u<=2*Pi, v>=0`.
+- **GetJacobi(parameterfremstilling, variabel_liste)**: Beregner Jacobi for en parameterfremstilling. Finder selv ud af, hvilken slags Jacobi-fkt., der er tale om. Intervallerne for de variable kan evt. angives i variabel_liste, og så simplificerer den udtrykket (f.eks. `[u=0..1, v=0..2*Pi]`)
 - **TrappeMetode(V)**: Beregner kurveintegralet af V fra origo til et vilkårligt punkt (x,y,z). Det kan nemt tjekkes om V er et gradientvektorfelt ved at beregne **grad(TrappeMetode(V),variabel_liste)**, og se, om det er det samme som V.
-- **Diagonalize(A)**: Laver unitær diagonalisering af A (returnerer Q og Lambda, så `A=Q.Lambda.Transpose(Q))`. Man kan tilføje `unitarily = false` for at lave ikke-unitær diagonalisering, så `A = Q.Lambda.Q^(-1)`, og `positive = false` for at den ikke skal returnere en Q med positiv determinant.
+- **Diagonalize(A)**: Laver unitær diagonalisering af A (returnerer Q og Lambda, så `A=Q.Lambda.Transpose(Q))`. Man kan tilføje `unitarily = false` for at lave ikke-unitær diagonalisering, så `A = Q.Lambda.Q^(-1)`, og `positive = false` for at den ikke nødvendigvis skal returnere en Q med positiv determinant.
+- **Stamvektorfelt(V)**: Beregner stamvektorfeltet W til V (dvs. et vektorfelt så rot(W)=V) vha. formlen fra Opg 6. store dag uge F13. Hvis stamvektorfeltet ikke faktisk findes (dvs. hvis V ikke er divergensfrit) returnerer den stadig output fra formlen, men gør opmærksom på, at det ikke er et stamvektorfelt.
+- **vsolve(x=y)**: Løser en vektorligning, dvs. løser hver koordinatligning samtidigt.
+- **vintegrate(vektor, variabel)**: Integrerer en vektor, dvs. returnerer en ny vektor, der indeholder integralet af hver koordinat i den originale vektor. Variabel kan evt. være en liste af variable for dobbelt- og trippelintegraler, og kan evt. have intervaller på for bestemte integraler.
+- **MyConstants("symbol")**: Giver hurtig adgang til de mest anvendte fysiske konstanter (mest rettet mod 10022), f.eks. `R := MyConstants("R")`
+
+
 
 # At ændre i Michael-pakken
 Hvis man gerne vil tilføje noget til sin egen Michael-pakke, skal funktionerne skrives ind i 'MichaelPakken.mpl', laves om til en .mla-fil med Maples `savelib`-kommando, og til sidst kopieres ind i lib-mappen. Den mest strømlinede måde at gøre det på er at bruge Maple-filen 'CreateMichaelPakke.mw', men den kræver at man downloader hele dette repository (se 'Til udviklere' nedenfor).

@@ -43,7 +43,7 @@ elif nops(vars) = 3 then return (simplify(abs(det(matrix))) assuming assumptions
 end if;
 end proc:
 
-TrappeMetode := proc(V::procedure) local x, y, z, t;
+TrappeMetode := proc(V) local x, y, z, t;
 if op(eval(V))[3] = operator then return simplify(int(V(t, 0)[1], t = 0 .. x) + int(V(x, t)[2], t = 0 .. y));
 elif op(eval(V))[4] = operator then return simplify(int(V(t, 0, 0)[1], t = 0 .. x) + int(V(x, t, 0)[2], t = 0 .. y) + int(V(x, y, t)[3], t = 0 .. z));
 else print("V skal være en funktion, ikke et udtryk (f.eks. skal der ikke stå V(x,y,z), men bare V)");
@@ -53,7 +53,7 @@ end proc;
 Diagonalize := proc(A, unitarily := true, positive := true) local evals, evecs, Lambda, cols, i, S, dim, col, lambda1; if unitarily and `not`(Equal((HermitianTranspose(A)) . A, A . (HermitianTranspose(A)))) then error "Not unitarily diagonalizable. Use 'unitarily=false' to try non-unitary diagonalization"; end if; evals, S := Eigenvectors(A); Lambda := DiagonalMatrix(evals); dim := op(A)[2]; if `længde`(S[1 .. dim, dim]) = 0 then error "Not diagonalizable, too few linearly independent eigenvectors"; end if; if unitarily then S := Matrix(GramSchmidt([seq(S[1 .. dim, i], i = 1 .. dim)], normalized)); end if; if positive and `not`(0 <= Determinant(S)) then col := S[1 .. dim, 1]; S[1 .. dim, 1] := S[1 .. dim, 2]; S[1 .. dim, 2] := col; lambda1 := Lambda[1, 1]; Lambda[1, 1] := Lambda[2, 2]; Lambda[2, 2] := lambda1; end if; return Lambda, S; end proc:
 
 
-MyConstants := proc(constant::string); #taken from appendix G of University Physics
+MyConstants := proc(constant); #taken from appendix G of University Physics
 if constant = "R" then return MyConstants("N_A")*MyConstants("k");
 elif constant = "c" then return 2.99792458*10^8*Unit(('m')/('s'));
 elif constant = "e" then return 1.602176634*10^(-19)*Unit('C');
@@ -70,7 +70,7 @@ else print("Du skal angive det almindelige symbol for konstanten med citationste
 end if;
 end proc;
 
-Stamvektorfelt := proc(V::procedure, verbose := true) local W, i; W := unapply(kryds(-<x, y, z>, <seq(int(u*V(u*x, u*y, u*z)[i], u = 0 .. 1), i = 1 .. 3)>), [x, y, z]); if verbose and `not`(Equal(rot(W)(x, y, z), V(x, y, z))) then print("Der findes ikke et stamvektorfeltet, men dette er output fra formlen"); end if; return W; end proc:
+Stamvektorfelt := proc(V, silent := true) local W, i; W := unapply(kryds(-<x, y, z>, <seq(int(u*V(u*x, u*y, u*z)[i], u = 0 .. 1), i = 1 .. 3)>), [x, y, z]); if silent and `not`(Equal(rot(W)(x, y, z), V(x, y, z))) then print("Dette er *ikke* et stamvektorfelt"); end if; return W; end proc:
 
 vsolve := proc(vligning, vars := []) local alleqs, i; alleqs := {seq(lhs(vligning)[i] = rhs(vligning)[i], i = 1 .. numelems(rhs(vligning)))}; if vars = [] then solve(alleqs); else solve(alleqs, vars); end if; end proc:
 
