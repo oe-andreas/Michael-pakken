@@ -36,7 +36,7 @@ Næsten alle vektorfunktioner fungerer også, hvis der passes en liste eller mæ
 - **TrappeMetode(V)**: Beregner kurveintegralet af V fra origo til et vilkårligt punkt (x,y,z). Det kan nemt tjekkes om V er et gradientvektorfelt ved at beregne **grad(TrappeMetode(V),variabel_liste)**, og se, om det er det samme som V.
 - **Diagonalize(A)**: Laver unitær diagonalisering af A (returnerer Q og Lambda, så `A=Q.Lambda.Transpose(Q))`. Man kan tilføje `unitarily = false` for at lave ikke-unitær diagonalisering, så `A = Q.Lambda.Q^(-1)`, og `positive = false` for at den ikke nødvendigvis skal returnere en Q med positiv determinant.
 - **Stamvektorfelt(V)**: Beregner stamvektorfeltet W til V (dvs. et vektorfelt så rot(W)=V) vha. formlen fra Opg 6. store dag uge F13. Hvis stamvektorfeltet ikke faktisk findes (dvs. hvis V ikke er divergensfrit) returnerer den stadig output fra formlen, men gør opmærksom på, at det ikke er et stamvektorfelt.
-- **vsolve(x=y)**: Løser en vektorligning, dvs. løser hver koordinatligning samtidigt.
+- **vsolve(x=y, other_arguments)**: Løser en vektorligning, dvs. løser hver koordinatligning samtidigt. `other_arguments` er optional, og er en liste over andre ting, at sende videre til `solve` f.eks. `[{a,b}, explicit]`.
 - **vintegrate(vektor, variabel)**: Integrerer en vektor, dvs. returnerer en ny vektor, der indeholder integralet af hver koordinat i den originale vektor. Variabel kan evt. være en liste af variable for dobbelt- og trippelintegraler, og kan evt. have intervaller på for bestemte integraler.
 - **MyConstants("symbol")**: Giver hurtig adgang til de mest anvendte fysiske konstanter (mest rettet mod 10022), f.eks. `R := MyConstants("R")`
 

@@ -72,7 +72,7 @@ end proc;
 
 Stamvektorfelt := proc(V::procedure, verbose := true) local W, i; W := unapply(kryds(-<x, y, z>, <seq(int(u*V(u*x, u*y, u*z)[i], u = 0 .. 1), i = 1 .. 3)>), [x, y, z]); if verbose and `not`(Equal(rot(W)(x, y, z), V(x, y, z))) then print("Der findes ikke et stamvektorfeltet, men dette er output fra formlen"); end if; return W; end proc:
 
-vsolve := proc(vligning, other_arguments:=[]) local alleqs, i; alleqs := {seq(lhs(vligning)[i] = rhs(vligning)[i], i = 1 .. numelems(rhs(vligning)))}; if other_arguments = [] then solve(alleqs); else solve(alleqs, op(other_arguments)); end if; end proc:
+vsolve := proc(vligning, other_arguments:=[]) local alleqs, i; alleqs := {seq(lhs(vligning)[i] = rhs(vligning)[i], i = 1 .. numelems(rhs(vligning)))}; if other_arguments = [] then solve(alleqs); else solve(alleqs, op(vars)); end if; end proc:
 
 vintegrate := proc(v, vars) local i; <seq(int(v[i], vars), i = 1 .. numelems(v))>; end proc:
 
