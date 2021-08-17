@@ -58,7 +58,7 @@ if constant = "R" then return MyConstants("N_A")*MyConstants("k");
 elif constant = "c" then return 2.99792458*10^8*Unit(('m')/('s'));
 elif constant = "e" then return 1.602176634*10^(-19)*Unit('C');
 elif constant = "G" then return 6.67408*10^(-11)*Unit((('N')*('m')^2)/(('kg')^2));
-elif constant = "h" then return 6.62607015*10^(-34)*Unit(('J')*('s'));
+elif constant = "h" then return 6.62607015*10^(-34)*Unit(('J')*('S'));
 elif constant = "k" then return 1.380649*10^(-23)*Unit(('J')/('K'));
 elif constant = "N_A" then return 6.02214076*10^(23)*Unit(('mol')^(-1));
 elif constant = "m_e" then return 9.10938356*10^(-31)*Unit(('kg'));
@@ -66,7 +66,7 @@ elif constant = "m_p" then return 1.672621898*10^(-27)*Unit(('kg'));
 elif constant = "m_n" then return 1.674927471*10^(-27)*Unit(('kg'));
 elif constant = "mu_0" then return 4*Pi*10^(-7)*Unit(('Wb')/('A'*'m'));
 elif constant = "epsilon_0" then return 1/(MyConstants("mu_0")*MyConstants("c")^2);
-elif constant = "F" then return 9.647*10^4*Unit(('C')/('mol'));
+elif constant = "F" then return 9.647*10^4*Unit('C');
 else print("Du skal angive det almindelige symbol for konstanten med citationstegn. R, c, e, G, h, K, N_A, m_e, m_p, m_n, mu_0, epsilon_0")
 end if;
 end proc;
